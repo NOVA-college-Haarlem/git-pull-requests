@@ -1,0 +1,124 @@
+:root {
+    color-scheme: light;
+    font-family: "Trebuchet MS", "Gill Sans", sans-serif;
+    color: #202b28;
+    background: #f4f5ef;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-width: 320px;
+    min-height: 100vh;
+    margin: 0;
+    background: radial-gradient(circle at 90% 4%, #e1eee7 0, transparent 28rem), #f4f5ef;
+}
+
+.page {
+    width: min(1120px, calc(100% - 40px));
+    margin: 0 auto;
+    padding: 72px 0 88px;
+}
+
+.page-header {
+    margin-bottom: 32px;
+}
+
+.eyebrow {
+    margin: 0 0 10px;
+    color: #527a68;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+h1 {
+    margin: 0;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(2.2rem, 6vw, 3.6rem);
+    font-weight: 500;
+    line-height: 1.05;
+}
+
+.developer-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.developer-card {
+    overflow: hidden;
+    border: 1px solid #e2e6df;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 3px 10px rgb(32 43 40 / 5%);
+    transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.developer-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 28px rgb(32 43 40 / 13%);
+}
+
+.developer-card img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 8 / 5;
+    object-fit: cover;
+    background: #dce8df;
+    transition: transform 240ms ease;
+}
+
+.developer-card:hover img {
+    transform: scale(1.04);
+}
+
+.card-content {
+    padding: 16px 17px 18px;
+}
+
+.card-content h2 {
+    margin: 0 0 8px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.card-content p {
+    margin: 0;
+    color: #606b66;
+    font-size: 0.875rem;
+    line-height: 1.55;
+}
+
+@media (max-width: 900px) {
+    .developer-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 540px) {
+    .page {
+        width: min(100% - 32px, 400px);
+        padding-top: 48px;
+    }
+
+    .developer-grid {
+        gap: 16px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+    }
+}
