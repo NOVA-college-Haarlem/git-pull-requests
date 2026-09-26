@@ -1,5 +1,10 @@
 # Pull Requests op Github
 
+## Voorbereiding
+
+- De docent tekent op het bord het verschil tussen lokale en remote branches, en tussen de `main` branch en een feature branch. 
+- Laat zien: waar wordt de PR aangemaakt?
+
 ## Stappen voor studenten (1)
 
 ### Code wijzigen en PR aanmaken
