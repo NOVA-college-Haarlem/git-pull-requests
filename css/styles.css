@@ -55,7 +55,7 @@ h1 {
     overflow: hidden;
     border: 1px solid #e2e6df;
     border-radius: 8px;
-    background: #fff;
+    background: #d90f0f;
     box-shadow: 0 3px 10px rgb(32 43 40 / 5%);
     transition: transform 180ms ease, box-shadow 180ms ease;
 }
