@@ -15,7 +15,7 @@ body {
     min-width: 320px;
     min-height: 100vh;
     margin: 0;
-    background: radial-gradient(circle at 90% 4%, #e1eee7 0, transparent 28rem), #f4f5ef;
+    background: radial-gradient(circle at 90% 4%, #7013c1 0, transparent 28rem), #d4ff00;
 }
 
 .page {
@@ -30,7 +30,7 @@ body {
 
 .eyebrow {
     margin: 0 0 10px;
-    color: #527a68;
+    color: #670e0e;
     font-size: 0.75rem;
     font-weight: 700;
     letter-spacing: 0.12em;
